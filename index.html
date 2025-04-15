@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random ID Term Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Random ID Term Selector</h1>
+
+    <button id="randomize-btn">Get Random Term</button>
+    <button id="reset-btn">Reset Blacklist</button>
+    <p id="term-display">Click the button to get a term!</p>
+
+    <hr>
+
+    <!-- New Dropdown for Category Selection -->
+    <h2>Select Category (Optional)</h2>
+    <select id="category-select">
+      <option value="">All Categories</option>
+      <!-- Categories will be dynamically populated here -->
+    </select>
+
+    <hr>
+
+    <h2>Add New Term</h2>
+    <input type="text" id="new-term" placeholder="Enter term">
+    <input type="text" id="new-category" placeholder="Enter category">
+    <button id="add-term-btn">Add Term</button>
+
+    <hr>
+
+    <!-- New Import Section -->
+    <h2>Import Terms</h2>
+    <input type="file" id="file-input" />
+    <button id="import-btn">Import Terms</button>
+    <p id="import-status"></p>
+
+    <hr>
+
+    <h2>Terms by Category</h2>
+    <div id="term-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
